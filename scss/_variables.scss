@@ -1,0 +1,25 @@
+@mixin flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-space {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin img-centered($width){
+  display: flex;
+  width: $width;
+}
+
+@mixin padding-li() {
+  padding: 10px;
+}
+
+$grey: #626262;
+$font-mobile: 0.6rem;
+$margin-min: 5% 5%;
+$margin-big: 5% 10%;
+$margin-text: 5% 0 5%;

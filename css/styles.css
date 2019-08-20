@@ -1,0 +1,174 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none; }
+
+html {
+  color: #626262;
+  font-family: "Playfair Display";
+  font-size: 0.6rem;
+  font-weight: 400; }
+
+.header {
+  margin: 5% 5%; }
+  .header .logo {
+    height: 1.5rem; }
+  .header .nav-list {
+    margin: 5% 5%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none; }
+    .header .nav-list a {
+      color: #626262;
+      text-transform: uppercase; }
+
+.content .img {
+  margin: 5% 5%;
+  display: flex;
+  justify-content: center; }
+  .content .img .main-img {
+    display: flex;
+    width: 100%; }
+
+.content .section {
+  margin: 5% 10%; }
+  .content .section .section-title {
+    margin: 5% 0 5%;
+    color: #626262;
+    font-family: "Playfair Display";
+    font-size: 1.5rem;
+    font-weight: 400; }
+  .content .section .section-subtitle {
+    margin: 5% 0 5%;
+    color: #b4ad9e;
+    font-family: Ubuntu;
+    font-weight: 300;
+    text-transform: uppercase; }
+  .content .section .section-text {
+    margin: 5% 0 5%; }
+  .content .section .pictures {
+    display: flex;
+    width: 100%; }
+
+.content .section-aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f0f0f0;
+  height: 100px; }
+  .content .section-aside .section-aside-title {
+    color: #333333;
+    font-family: "Playfair Display";
+    font-weight: 400;
+    letter-spacing: 0.75px;
+    margin: 2% 5% 2% 5%; }
+  .content .section-aside .section-aside-form {
+    border-bottom: solid 1px #333333;
+    width: 30%;
+    display: flex;
+    justify-content: space-between; }
+  .content .section-aside .input {
+    background-color: #f0f0f0;
+    outline: none;
+    border: none;
+    font-size: 0.5rem;
+    width: 100%; }
+  .content .section-aside img {
+    width: auto;
+    height: 1rem; }
+
+.bottom-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; }
+  .bottom-button .btn {
+    height: 30px;
+    border: solid 1px;
+    border-color: #626262;
+    padding: 6px 6px 6px 6px;
+    background-color: #ffffff;
+    color: #626262; }
+
+.footer {
+  background-color: #f0f0f0;
+  height: 50px;
+  display: grid; }
+  .footer .footer-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none; }
+    .footer .footer-list-second-half {
+      display: flex;
+      padding: 5px; }
+      .footer .footer-list-second-half .footer-nav-list-item {
+        padding: 10px; }
+    .footer .footer-list-first-half {
+      display: flex;
+      padding: 5px; }
+      .footer .footer-list-first-half .footer-nav-list-item {
+        padding: 10px; }
+
+@media (min-width: 720px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #626262;
+    font-family: "Playfair Display";
+    font-size: 14px;
+    font-weight: 400; }
+    .header .logo {
+      height: 2.5rem; }
+    .header .nav-list-item {
+      padding: 0px 40px; }
+  .content .section .section-subtitle {
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase; }
+  .content .section .section-title {
+    font-size: 30px;
+    font-weight: 400; }
+  .content .section .section-text {
+    font-size: 14px;
+    font-weight: 400; }
+  .content .section .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px; }
+  .content .section-aside {
+    height: 287px; }
+    .content .section-aside-title {
+      font-weight: 400;
+      font-size: 30px;
+      letter-spacing: 0.75px; }
+    .content .section-aside-form {
+      height: 30px;
+      margin-top: 20px; }
+      .content .section-aside-form .input {
+        font-size: 10px; }
+      .content .section-aside-form .button-img {
+        height: 2rem; }
+  .content .bottom-button .btn {
+    width: 150px;
+    height: 50px;
+    font-size: medium; }
+  .footer {
+    height: 97px; }
+    .footer .footer-list {
+      display: flex;
+      color: #000000;
+      font-size: 14px;
+      font-weight: 400; }
+    .footer .footer-list-first-half {
+      display: flex;
+      justify-content: space-between; }
+    .footer .footer-list-second-half {
+      display: flex;
+      justify-content: space-between; }
+    .footer .footer-nav-list-item {
+      padding: 10px; } }

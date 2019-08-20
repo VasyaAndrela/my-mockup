@@ -1,0 +1,102 @@
+@import '_variables';
+
+@media (min-width: 720px) {
+  
+  .header {
+    @include flex-space();
+    align-items: center;
+    color: #626262;
+    font-family: "Playfair Display";
+    font-size: 14px;
+    font-weight: 400;
+
+    .logo {
+      height: 2.5rem;
+    }
+    
+    .nav-list-item {
+      padding: 0px 40px;
+    }
+  }
+
+  .content {
+    .section {
+        &-subtitle {
+        font-family: Ubuntu;
+        font-size: 14px;
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+
+      &-title {
+        font-size: 30px;
+        font-weight: 400;
+      }
+      
+      &-text {
+        font-size: 14px;
+        font-weight: 400;
+      }
+
+      .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+      }
+    }
+    
+    .section-aside {
+      height: 287px;
+      
+      &-title {
+        font-weight: 400;
+        font-size: 30px;
+        letter-spacing: 0.75px;
+      }
+
+      &-form {
+        height: 30px;
+        margin-top: 20px;
+        
+        .input {
+          font-size: 10px;
+        }
+        
+        .button-img {
+          height: 2rem;
+        }
+      }
+    }
+
+    .bottom-button {
+      .btn {
+        width: 150px;
+        height: 50px;
+        font-size: medium;
+      }
+    }
+  }
+  
+  .footer {
+    height: 97px;
+    
+    &-list {
+      display: flex;
+      color: #000000;
+      font-size: 14px;
+      font-weight: 400;
+      
+      &-first-half {
+        @include flex-space();
+      }
+      
+      &-second-half {
+        @include flex-space();
+      }
+    }
+      
+    &-nav-list-item {
+      @include padding-li();
+    }
+  }
+}

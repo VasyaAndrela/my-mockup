@@ -1,0 +1,158 @@
+@import '_variables';
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  color: $grey;
+  font-family: "Playfair Display";
+  font-size: $font-mobile;
+  font-weight: 400;
+}
+
+.header {
+  margin: $margin-min;
+  
+  .logo {
+    height: 1.5rem;
+  }
+  
+  .nav-list {
+    margin: $margin-min;
+    @include flex-space();
+    list-style-type: none;
+    
+    .links {
+      color: $grey;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.content {
+  
+  .img {
+    margin: $margin-min;
+    display: flex;
+    justify-content: center;
+    
+    .main-img {
+      @include img-centered(100%);
+    }
+  }
+  
+  .section {
+    margin: $margin-big;
+    
+    .section-title {
+      margin: $margin-text;
+      color: $grey;
+      font-family: "Playfair Display";
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+    
+    .section-subtitle {
+      margin: $margin-text;
+      color: #b4ad9e;
+      font-family: Ubuntu;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+    
+    .section-text {
+      margin: $margin-text;
+    }
+    
+    .pictures {
+      @include img-centered(100%);
+    }
+  }
+  
+  .section-aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    height: 100px;
+    
+    .section-aside-title {
+      color: #333333;
+      font-family: "Playfair Display";
+      font-weight: 400;
+      letter-spacing: 0.75px;
+      margin: 2% 5% 2% 5%;
+    }
+    
+    .section-aside-form {
+      border-bottom: solid 1px #333333;
+      width: 30%;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .input {
+      background-color: #f0f0f0;
+      outline: none;
+      border: none;
+      font-size: 0.5rem;
+      width: 100%;
+    }
+    
+    .button-img {
+      width: auto;
+      height: 1rem;
+    }
+  }
+}
+
+.bottom-button {
+  @include flex-center();
+  height: 100px;
+  
+  .btn {
+    height: 30px;
+    border: solid 1px $grey;
+    padding: 6px;
+    background-color: #ffffff;
+    color: $grey;
+  }
+}
+
+.footer {
+  background-color: #f0f0f0;
+  height: 50px;
+  display: grid;
+  
+  &-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    
+    &-second-half {
+      display: flex;
+      padding: 5px;
+      
+      .footer-nav-list-item {
+        @include padding-li();
+      }
+    }
+
+    &-first-half {
+      display: flex;
+      padding: 5px;
+
+      .footer-nav-list-item {
+        @include padding-li();
+      }
+    }
+  }
+}
+
+@import '_media-query';
